@@ -21,4 +21,4 @@ plot(flowers,insect,pch=19)
 plot(flowers,insect,pch=19,cex=2)
 
 #symbol colors
-plot(flowers,insect,pch=19,cex=2,col="chocolate1") #facendo così R non legge
+plot(flowers,insect,pch=19,cex=2,col="chocolate1") #se copio e incollo, R non legge

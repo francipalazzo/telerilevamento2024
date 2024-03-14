@@ -22,3 +22,16 @@ importing new bands
 > b8<-im.import("sentinel.dolomites.b8.tif")
 > plot(b8,col=viola)
 
+#multiframe
+> par(mfrow=c(2,2))
+> plot(b2,col=viola)
+> plot(b3,col=viola)
+> plot(b4,col=viola)
+> plot(b8,col=viola) 
+
+#creating a satelltite image
+stacksent<-c(b2,b3,b4,b8)
+plot(stacksent,col=viola)
+
+>plot(stacksent[[4]],col=viola) #per fare lo stack di un solo elemento
+>dev.off() #per cancellare una delle funzioni par precedenti

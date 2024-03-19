@@ -35,3 +35,24 @@ plot(stacksent,col=viola)
 
 >plot(stacksent[[4]],col=viola) #per fare lo stack di un solo elemento
 >dev.off() #per cancellare una delle funzioni par precedenti
+
+#RGB plotting
+#stacksent[(1)] = b2 = blue
+#stacksent[(2)] = b3 = green
+#stacksent[(3)] = b4 = red
+#stacksent[(4)] = b8 = nir (vicino infrarosso)
+
+im.plotRGB(stacksent, 3, 2, 1)
+im.plotRGB(stacksent, 4, 2, 1) # ho sostituito il rosso con l'infrarosso
+
+#dev.off()
+#vediamo che il colore non cambia perchè l'infrarosso è il meno correlato alle altre bande
+im.plotRGB(stacksent, 3, 2, 1)
+im.plotRGB(stacksent, 4, 2, 1)
+im.plotRGB(stacksent, 4, 3, 2)
+
+#nir on green
+im.plotRGB(stacksent, 3, 4, 2)
+
+#nir on blue
+im.plotRGB(stacksent, 3, 2, 4) 

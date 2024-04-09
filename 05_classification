@@ -1,0 +1,22 @@
+#quantifying land cover variability
+
+install.packages("ggplot2")
+
+library(terra)
+library(imageRy)
+library(ggplot2)
+
+#listing images
+im.list()
+
+#importaing data
+m1992<-im.import("matogrosso_l5_1992219_lrg.jpg")
+> m2006<-im.import("matogrosso_ast_2006209_lrg.jpg")
+
+#classifying sun image
+sun<-im.import("Solar_Orbiter_s_first_views_of_the_Sun_pillars.jpg")
+> sunc<-im.classify(sun,num_cluster=3)
+
+#classifying matogrosso images
+> m1992c<-im.classify(m1992,num_cluster=2)
+> m2006c<-im.classify(m2006,num_cluster=2)

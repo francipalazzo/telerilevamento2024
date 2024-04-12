@@ -45,5 +45,6 @@ plot(stackg, col=clg)
 
 # Exercise: make the differencxe between the first and the final elemnts of the stack
 difg <- stackg[[4]] - stackg[[1]]
-# difg <- g2000 - g2015
-plot(difg, col=cldif)
+clgreen <- colorRampPalette(c("red","white","blue")) (100)
+plot(difg, col=clgreen)
+

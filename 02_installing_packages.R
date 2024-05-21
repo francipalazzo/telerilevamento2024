@@ -7,9 +7,9 @@ install.packages("devtools")
 library(devtools)
 
 installing packaging from Github:
-devtools::install_Github #"::" significa che install_Github è una funzione in devtools
+devtools::install_Github #"::" #it means that install_Github is a function of devtools
 
-install the imageRy package from GitHub
+#installing the imageRy package from GitHub
 #a devtools function
 devtools::install_github("ducciorocchini/imageRy")
 library(imageRy)

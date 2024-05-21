@@ -1,1 +1,5 @@
-#how to use overleaf
+% how to use overleaf
+% log in and start a new project
+% to make comments we use the % symbol
+% to save and visualize your project after writing all the functions, you have to "recompile"
+% if i wanna remove something from my project, i just have to delete its function

@@ -1,13 +1,12 @@
 first R script
 
-# R come calcolatrice
+# R as calculator 
 a <-5+5
 b <- 2*2
 a+b
 
 # arrays
-
-flowers<-c(3,,6,8,10,15,18)
+flowers<-c(3,6,8,10,15,18)
 insect<-c(10,16,25,42,61,70)
 
 plot(flowers,insect)
@@ -21,4 +20,4 @@ plot(flowers,insect,pch=19)
 plot(flowers,insect,pch=19,cex=2)
 
 #symbol colors
-plot(flowers,insect,pch=19,cex=2,col="chocolate1") #se copio e incollo, R non legge
+plot(flowers,insect,pch=19,cex=2,col="chocolate1") #if i copy and paste, R won't read it and it won't give me an error 

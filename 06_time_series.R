@@ -1,15 +1,16 @@
 # other method to see changes in time
 #the first one was by classificating the image
 
+# lounching the packages
 library(terra)
 library(imageRy)
-
 im.list()
 
 #importing data
 en01<-im.import("EN_01.png")
 en13<-im.import("EN_13.png")
 
+# making a par
 par(mfrow=c(2,1))
 im.plotRGB.auto(EN01)
 im.plotRGB.auto(EN13)
@@ -17,22 +18,22 @@ im.plotRGB.auto(EN13)
 # using the first element (band) of images
 dif = EN01[[1]] - EN13[[1]]
 
-# palette
+# changing the palette
 cldif <- colorRampPalette(c("blue", "white", "red")) (100)
 plot(dif, col=cldif)
 
-#ice melt in greenland
-
+# rapresentation of the ice melt in greenland
+#importing the image and choosing a palette
 g2000 <- im.import("greenland.2000.tif")
 clg <- colorRampPalette(c("black", "blue", "white", "red")) (100)
 plot(g2000, col=clg)
 
+#importing the other images
 g2005 <- im.import("greenland.2005.tif")
 g2010 <- im.import("greenland.2010.tif")
 g2015 <- im.import("greenland.2015.tif")
 
-plot(g2015, col=clg)
-
+#making a par
 par(mfrow=c(1,2))
 plot(g2000, col=clg)
 plot(g2005, col=clg)

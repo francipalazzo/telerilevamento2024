@@ -1,6 +1,6 @@
 #installing new packages in R
 
-install.packages("Terra")
+install.packages("Terra") #The terra package has functions for creating, reading, manipulating, and writing raster data
 library(terra)
 
 install.packages("devtools")

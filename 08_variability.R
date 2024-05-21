@@ -19,7 +19,6 @@ plot(nir)
 col<-colorRampPalette(c("red","orange","yellow"))(100) #choosing a palette
 plot(nir,col=col)
 
-#calculating the standard variation
 sd3<-focal(nir, matrix(1/9,3,3), fun=sd) #(with "focal" i can calculate a matrix of 3x3)
 plot(sd3)
 

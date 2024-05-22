@@ -2,4 +2,69 @@
 % log in and start a new project
 % to make comments we use the % symbol
 % to save and visualize your project after writing all the functions, you have to "recompile"
-% if i wanna remove something from my project, i just have to delete its function
+% if you wanna remove something from my project, you just have to delete its function
+
+\title{...}
+\author{...}
+\date{...} 
+
+\begin{document} % to begin the document
+
+\maketitle
+
+\begin{abstract}
+[12pt]bla bla bla %to make words bigger
+
+\\hline %to make a box
+\textbf{box 1}
+\hline
+\begin{itemize}
+    \item haha
+    \item haah
+\end{itemize}
+\hline
+
+\end{abstract}
+
+\section{Introduction}
+
+\section{Methods}\label{sec:methods}
+
+The main characteristics of the study area are:
+\begin{itemize} % to make a bullet list
+    \item 1
+    \item 2
+    \item 3
+\end{itemize}
+
+\end{Methods}
+
+\begin{equation} %function useful to insert an aquation
+    F = \sqrt[3]{G \times \frac{m_1 \times m_2}{r^2}} 
+    \label{eq:newton} % to make a label
+\end{equation}
+
+\section{Results}
+bla bla bla 
+
+\end{Results}
+
+\section{Discussion}
+bla bla
+\end{Discussion}
+
+\begin{thebibliography}{999}
+    \bibitem[Scribner, 2010]{Scribner2017}
+Scribner, V. (2017). “Such monsters do exist in nature”: mermaids, tritons, and the science of wonder in eighteenth-century Europe. Itinerario, 41(3), 507-538.
+\end{thebibliography}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{ariana.jpg}
+    \caption{Ariana at the 2024 Met Gala}
+    \label{fig:ariana}
+\end{figure}
+
+\url{} %to add a link
+
+\end{document}

@@ -3,16 +3,20 @@
 this repo is thought for remote sensing lectures at Unibo
 
 ## master program involved
-blah blah blah
+there isn't actually one
 
+my interests are
 + science and management of nature
-+ geology
-+ ...
++ botany
++ marine biology
 
 >> **note**
-no note actually
+i do have more interests but the list would be way too long
 
-[sito Unibo](https://corsi.unibo.it/magistrale/ScienzeGestioneNatura)
+check this out [scienze e gestione della natura](https://corsi.unibo.it/magistrale/ScienzeGestioneNatura)
 
-```{r}
+some of the packages i use the most on R:
+```{r} 
 library(terra)
+library(imageRy)
+library(viridis)

@@ -6,7 +6,7 @@ this repo is thought for remote sensing lectures at Unibo
 there isn't actually one
 
 my interests are
-+ science and management of nature
++ geology
 + botany
 + marine biology
 

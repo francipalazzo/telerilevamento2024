@@ -1,1 +1,20 @@
-#how to create a presentation on overleaf
+% how to create a presentation on overleaf
+% all the functions are essentially the same as the ones used to create a document
+
+\documentclass{beamer} % necessary if you wanna create a presentation
+\usepackage{graphicx} % Required for inserting images
+
+% if you wanna change the theme and the colours of the presentation you have to search on google: https://mpetroff.net/files/beamer-theme-matrix/
+\usetheme{Frankfurt} % to change the theme
+\usecolortheme{crane} % to change the colour
+
+\begin{introduction} % if you wanna add 4 images next to each other
+    \begin{figure}
+        \centering
+        \includegraphics[width=.4\linewidth]{stats.png}
+        \includegraphics[width=.4\linewidth]{stats.png} \\ %to place these images in 2 row
+        \includegraphics[width=.4\linewidth]{stats.png}
+        \includegraphics[width=.4\linewidth]{stats.png} \\
+    \end{introduction}
+
+\end{document}

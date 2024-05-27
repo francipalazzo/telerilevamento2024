@@ -2,16 +2,13 @@
 
 this repo is thought for remote sensing lectures at Unibo
 
-## master program involved
-there isn't actually one
-
-my interests are
+my interests are:
 + geology
 + botany
 + marine biology
 
 >> **note**
-i do have more interests but the list would be way too long
+i do have other interests but the list would be way too long
 
 check this out [scienze e gestione della natura](https://corsi.unibo.it/magistrale/ScienzeGestioneNatura)
 

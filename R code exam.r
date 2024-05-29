@@ -17,14 +17,14 @@
 \begin{minipage}{0.40\linewidth} #this function allows you to creare a column, among other stuff
 \centering 
 \includegraphics[width=\linewidth]{2007.jpg} #to put the image 
-\\[0.1cm] #to decide the distance between the image and the phrase below
+\\[0.1 cm] #to decide the distance between the image and the phrase below
 dry winter in 2007
 \end{minipage}
 \hspace{0.08\linewidth} #to establish the distance between paragraphs
 \begin{minipage}{0.40\linewidth}
 \centering
 \includegraphics[width=\linewidth]{2017.jpg}
-\\[0.1cm]
+\\[0.1 cm]
 wet winter in 2017
 \end{minipage} #to end the minipage
 \end{frame} #to end the slide

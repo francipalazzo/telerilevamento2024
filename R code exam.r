@@ -47,7 +47,7 @@ plot(sn2017) \\ #to visualize it
 
 #codes for the 4th slide about the RGB scheme
 \begin{frame}{RGB scheme}
-\justifying 
+\justifying ...
 \smallskip
 \begin{figure}
 \justifying

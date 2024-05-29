@@ -57,10 +57,6 @@ plot(sn2017) \\ #to visualize it
 \end{frame}
 
 #codes i used to switch bands and create a par (the same as the 5th slide)
-# band[[1]] = nir
-# band[[2]] = red
-# band[[3]] = green
-
 im.plotRGB(sn2007,3,2,1) #nir on blue
 im.plotRGB(sn2007,1,2,3) #nir on red
 im.plotRGB(sn2007,2,1,3) #nir on green
@@ -101,7 +97,7 @@ t2007<-ncell(c2007) #total number of cells
 prop2007=f2007/t2007 #proportion
 perc2007=prop2007*100 # %
 
-# % calculation for the 2017 image (same as the ones up above)
+# % calculation for the 2017 image (same as the ones up above but with different data)
 f2017<-freq(c2017) 
 t2017<-ncell(c2017)
 prop2017=f2017/t2017
@@ -126,7 +122,7 @@ g1+g2 #to glue both graphs in one picture
 #codes for the conclusive slide
 \begin{frame}{The End}
 \centering
-\textbf{Thank you for your attention!!}
+\textbf{...}
 \end{frame}
 
 \usetheme{Darmstadt} #to costumise the presentation with a unique theme

@@ -30,10 +30,10 @@ wet winter in 2017
 \end{frame} #to end the slide
 
 #codes for the 3th slide about the codes i used on R to visualize those images
-library(terra)
-library(imageRy)
-library(ggplot2)
-library(patchwork)
+library(terra) #package for manipulating raster files 
+library(imageRy) # other useful package for manipulating images
+library(ggplot2) #package that allows you to create graphs
+library(patchwork) #this is about modify and manipulate graphs
 
 #codes to import the 2007 image
 setwd("/Users/franc/OneDrive/Immagini") \\ #to import an outside image in R, the 2007 one in this case

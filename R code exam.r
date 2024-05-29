@@ -20,7 +20,7 @@
 \\[0.1 cm] #to decide the distance between the image and the phrase below
 dry winter in 2007
 \end{minipage}
-\hspace{0.08\linewidth} #to establish the distance between paragraphs
+\hspace{0.08\linewidth} #to establish the distance between columns
 \begin{minipage}{0.40\linewidth}
 \centering
 \includegraphics[width=\linewidth]{2017.jpg}

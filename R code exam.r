@@ -3,6 +3,7 @@
 \usepackage{graphicx}  # required for inserting images
 \usepackage{hyperref} # useful to make links or labeks work 
 \usepackage{ragged2e} # i used it to justify the text
+\usepackage{textcomp} # to use special symbols
 
 #codes for the 1th slide
 \title{Snowpack in the Sierra Nedava}
@@ -37,12 +38,12 @@ library(patchwork) #this is about modify and manipulate graphs
 
 #codes to import the 2007 image
 setwd("/Users/franc/OneDrive/Immagini") \\ #to import an outside image in R, the 2007 one in this case
-sn2007<-rast("2007.jpg") \\
+sn2007\texttt{<}-rast("2007.jpg") \\
 plot(sn2007) \\ #to visualize the image imported
 
 #codes to import the 2017 image
 setwd("/Users/franc/OneDrive/Immagini") \\ #to import the 2017 image in R
-sn2017<-rast("2017.jpg") \\
+sn2017\texttt{<}-rast("2017.jpg") \\
 plot(sn2017) \\ #to visualize it
 
 #codes for the 4th slide about the RGB scheme
@@ -92,22 +93,22 @@ par(mfrow=c(3,3)) #to glue all 6 images together
 
 #codes i used to classify the images and to create the graphics (same as the 8th slide)
 # % calculation for the 2007 image 
-f2007<-freq(c2007) #frequence
-t2007<-ncell(c2007) #total number of cells
+f2007\texttt{<}-freq(c2007) #frequence
+t2007\texttt{<}-ncell(c2007) #total number of cells
 prop2007=f2007/t2007 #proportion
 perc2007=prop2007*100 # %
 
 # % calculation for the 2017 image (same as the ones up above but with different data)
-f2017<-freq(c2017) 
-t2017<-ncell(c2017)
+f2017\texttt{<}-freq(c2017) 
+t2017\texttt{<}-ncell(c2017)
 prop2017=f2017/t2017
 perc2017=prop2017*100
 
 # codes to create the graphics
-area<-c("covered","dry") # this is what the x axe is gonna show
-dry.winter<-c(8,89) # % values obteined of the 2007 image shown in the y axe
-wet.winter<-c(31,67) # % values obteined of the 2017 image shown in the y axe
-tabout<-data.frame(area,dry.winter,wet.winter) #to put all together 
+area\texttt{<}-c("covered","dry") # this is what the x axe is gonna show
+dry.winter\texttt{<}-c(8,89) # % values obteined of the 2007 image shown in the y axe
+wet.winter\texttt{<}-c(31,67) # % values obteined of the 2017 image shown in the y axe
+tabout\texttt{<}-data.frame(area,dry.winter,wet.winter) #to put all together 
 
 g1<-ggplot(tabout,aes(x=area,y=dry.winter,color=area))+geom_bar(stat="identity",fill="blue")+ylim(c(0,100)) #to create the graph of the 2007 image
 g2<-ggplot(tabout,aes(x=area,y=wet.winter,color=area))+geom_bar(stat="identity",fill="blue")+ylim(c(0,100)) #to create the graph of the 2017 image

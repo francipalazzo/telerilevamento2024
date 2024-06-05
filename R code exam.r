@@ -13,7 +13,7 @@
 
 #codes for the 2th slide which is the introduction
 \begin{frame}{Introduction} #in the {} goes the title of the slide
-\justifying ... # this function justify the text
+\centering ... # this function center the content of the entire slide
 \bigskip #it creates a big gab between everything you want to separate
 \begin{minipage}{0.40\linewidth} #this function allows you to creare a column, among other stuff
 \centering 
